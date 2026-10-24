@@ -74,9 +74,17 @@
     return lesson;
   }
 
-  function availableCourse() {
-    return courses.find(c => c.status === 'available');
+  // いま選んでいるコース（未選択なら最初に使えるコース）
+  function currentCourse() {
+    return courses.find(c => c.id === store.settings.courseId && c.status === 'available')
+      || courses.find(c => c.status === 'available');
   }
+
+  function loadCourseLessons(course) {
+    return Promise.all(course.lessons.map(r => ensureLesson(r.id)));
+  }
+
+  const shortLevel = label => label.replace(/英検|相当/g, '');
 
   /* ---------- 小さな道具 ---------- */
 
@@ -220,7 +228,7 @@
   }
 
   function renderHome() {
-    const course = availableCourse();
+    const course = currentCourse();
     const lessons = course.lessons.map(r => lessonCache[r.id]).filter(Boolean);
     const allWords = lessons.flatMap(l => l.words);
     const learned = learnedCount(allWords);
@@ -240,6 +248,14 @@
       <div class="hero__mofu">${M.svg(doneToday ? 'happy' : 'normal')}</div>
       <p class="bubble">${doneToday ? '今日もがんばったね！もう少しやってみる？' : greeting()}</p>
     </section>
+
+    <nav class="course-nav">
+      <div class="course-tabs" role="group" aria-label="コースをえらぶ">
+        ${courses.map(c => `<button class="course-tab" data-action="pick-course" data-course="${esc(c.id)}" aria-pressed="${c.id === course.id}" ${c.status !== 'available' ? 'disabled' : ''}>
+          <strong>${esc(shortLevel(c.levelLabel))}</strong><small>${c.status === 'available' ? esc(c.title) : '準備中'}</small>
+        </button>`).join('')}
+      </div>
+    </nav>
 
     <section class="mission card">
       <p class="eyebrow">今日のミッション</p>
@@ -262,6 +278,7 @@
       <div class="section-head">
         <h2>${esc(course.title)}</h2><span class="chip">${esc(course.levelLabel)}</span>
       </div>
+      <p class="muted course__desc">${esc(course.description)}</p>
       <ul class="lesson-list">
         ${lessons.map(l => {
           const p = store.lessons[l.id];
@@ -274,9 +291,6 @@
             </span>
           </button></li>`;
         }).join('')}
-      </ul>
-      <ul class="soon-list">
-        ${courses.filter(c => c.status !== 'available').map(c => `<li><span>${esc(c.title)}</span><span class="muted">${esc(c.levelLabel)}・準備中</span></li>`).join('')}
       </ul>
     </section>`;
   }
@@ -321,7 +335,9 @@
       </div>` : ''}
     </article>
 
-    <div class="tip">${M.svg(index === 0 ? 'normal' : 'think')}<p>${index === 0 ? '音を聞いて、声に出してまねしてみよう。' : '例文の中で、どこに出てくるか見てみてね。'}</p></div>
+    <div class="tip ${w.note ? 'tip--note' : ''}">${M.svg(w.note ? 'think' : 'normal')}<p>${w.note
+      ? `<strong>ポイント</strong>${esc(w.note)}`
+      : index === 0 ? '音を聞いて、声に出してまねしてみよう。' : '例文の中で、どこに出てくるか見てみてね。'}</p></div>
 
     <div class="nav-row">
       <button class="btn btn--ghost" data-action="learn-prev" ${index === 0 ? 'disabled' : ''}>まえへ</button>
@@ -333,27 +349,40 @@
 
   /* ---------- クイズ ---------- */
 
+  // 穴埋めで隠す部分（教材の blank、無ければ見出し語）
+  const blankOf = w => w.blank || w.en;
+
+  // 文頭の大文字で答えがばれないよう、選択肢は小文字始まりにそろえる（I は除く）
+  const clozeLabel = s => /^I(\b|')/.test(s) ? s : s.charAt(0).toLowerCase() + s.slice(1);
+
+  function clozeSentence(w) {
+    if (!w.example) return null;
+    const b = blankOf(w);
+    const i = w.example.en.toLowerCase().indexOf(b.toLowerCase());
+    if (i < 0) return null;
+    return { before: w.example.en.slice(0, i), after: w.example.en.slice(i + b.length) };
+  }
+
   function makeQuestion(word, pool, type) {
-    const key = type === 'en2ja' ? 'ja' : 'en';
-    const others = shuffle(pool.filter(w => w.id !== word.id && w[key] !== word[key]));
-    const seen = new Set([word[key]]);
+    if (type === 'cloze' && !clozeSentence(word)) type = 'en2ja';
+    const pickText = type === 'en2ja' ? w => w.ja : type === 'ja2en' ? w => w.en : w => clozeLabel(blankOf(w));
+    const answer = pickText(word);
+    const seen = new Set([answer]);
     const wrong = [];
-    for (const o of others) {
+    for (const o of shuffle(pool)) {
       if (wrong.length >= CHOICES - 1) break;
-      if (!seen.has(o[key])) { seen.add(o[key]); wrong.push(o[key]); }
+      const t = pickText(o);
+      if (o.id !== word.id && !seen.has(t)) { seen.add(t); wrong.push(t); }
     }
-    return {
-      word, type,
-      answer: word[key],
-      choices: shuffle([word[key]].concat(wrong))
-    };
+    return { word, type, answer, choices: shuffle([answer].concat(wrong)) };
   }
 
   function buildQuestions(words) {
-    // 英→日 と 日→英 を交互に出す
+    // レッスンごとの出題形式（quiz）を順番に回す。指定が無ければ英→日と日→英
     return shuffle(words).map((w, i) => {
       const lesson = lessonCache[w.lessonId];
-      return makeQuestion(w, lesson.words, i % 2 === 0 ? 'en2ja' : 'ja2en');
+      const types = lesson.quiz && lesson.quiz.length ? lesson.quiz : ['en2ja', 'ja2en'];
+      return makeQuestion(w, lesson.words, types[i % types.length]);
     });
   }
 
@@ -378,8 +407,14 @@
     const answered = picked !== null;
     const ok = answered && picked === q.answer;
     const last = index === questions.length - 1;
-    const promptText = q.type === 'en2ja' ? q.word.en : q.word.ja;
-    const ask = q.type === 'en2ja' ? 'この英語の意味は？' : 'これを英語でいうと？';
+    const asks = { en2ja: 'この英語の意味は？', ja2en: 'これを英語でいうと？', cloze: '空らんに入ることばは？' };
+    const cz = q.type === 'cloze' ? clozeSentence(q.word) : null;
+    const prompt = q.type === 'en2ja'
+      ? `<div class="question__prompt is-en" lang="en">${esc(q.word.en)}</div>${speakBtn(q.word.en, q.word.audio)}`
+      : q.type === 'ja2en'
+        ? `<div class="question__prompt">${esc(q.word.ja)}</div>`
+        : `<div class="question__cloze" lang="en">${esc(cz.before)}<span class="blank ${answered ? 'is-filled' : ''}">${answered ? esc(blankOf(q.word)) : ''}</span>${esc(cz.after)}</div>
+           <p class="question__hint">${esc(q.word.example.ja)}</p>`;
 
     return `
     <header class="focusbar">
@@ -390,9 +425,8 @@
 
     <p class="eyebrow center">${mode === 'review' ? '復習クイズ' : esc(lesson.title) + '・4択クイズ'}</p>
     <section class="question card">
-      <p class="question__ask">${ask}</p>
-      <div class="question__prompt ${q.type === 'en2ja' ? 'is-en' : ''}" ${q.type === 'en2ja' ? 'lang="en"' : ''}>${esc(promptText)}</div>
-      ${q.type === 'en2ja' ? speakBtn(q.word.en, q.word.audio) : ''}
+      <p class="question__ask">${asks[q.type]}</p>
+      ${prompt}
     </section>
 
     <div class="choices" role="group" aria-label="選択肢">
@@ -403,7 +437,7 @@
           else if (c === picked) cls = 'is-wrong';
           else cls = 'is-dim';
         }
-        return `<button class="choice ${cls}" data-action="pick" data-choice="${esc(c)}" ${answered ? 'disabled' : ''} ${q.type === 'ja2en' ? 'lang="en"' : ''}>
+        return `<button class="choice ${cls}" data-action="pick" data-choice="${esc(c)}" ${answered ? 'disabled' : ''} ${q.type !== 'en2ja' ? 'lang="en"' : ''}>
           <span class="choice__key">${'ABCD'[i]}</span><span class="choice__label">${esc(c)}</span>
           ${answered && c === q.answer ? `<span class="choice__mark">${icon.check}</span>` : ''}
           ${answered && c === picked && !ok ? `<span class="choice__mark">${icon.cross}</span>` : ''}
@@ -431,7 +465,10 @@
     view.results.push({ word: q.word, ok });
     recordAnswer(q.word, ok);
     render();
-    if (ok) speak(q.word.en, q.word.audio);
+    if (ok) {
+      if (q.type === 'cloze') speak(q.word.example.en, q.word.example.audio);
+      else speak(q.word.en, q.word.audio);
+    }
     const btn = app.querySelector('[data-action="quiz-next"]');
     if (btn) btn.focus({ preventScroll: true });
   }
@@ -457,7 +494,7 @@
     const total = results.length;
     const seconds = Math.round((Date.now() - startedAt) / 1000);
 
-    store.history.unshift({ at: Date.now(), lessonId: lesson ? lesson.id : null, mode, score, total, seconds });
+    store.history.unshift({ at: Date.now(), lessonId: lesson ? lesson.id : null, lessonTitle: lesson ? lesson.title : null, mode, score, total, seconds });
     store.history = store.history.slice(0, HISTORY_LIMIT);
     if (mode === 'lesson') {
       const p = store.lessons[lesson.id];
@@ -566,7 +603,7 @@
     const totalAns = Object.values(store.words).reduce((s, w) => s + w.correct + w.wrong, 0);
     const totalOk = Object.values(store.words).reduce((s, w) => s + w.correct, 0);
     const rate = totalAns ? Math.round((totalOk / totalAns) * 100) : 0;
-    const titleOf = id => (lessonCache[id] && lessonCache[id].title) || id;
+    const titleOf = h => (lessonCache[h.lessonId] && lessonCache[h.lessonId].title) || h.lessonTitle || h.lessonId;
 
     return `
     <header class="page-head"><h1>学習のきろく</h1><p class="muted">きろくはこの端末の中だけに保存されます。</p></header>
@@ -583,7 +620,7 @@
       ${store.history.length ? `<ul class="history">
         ${store.history.slice(0, 20).map(h => `<li>
           <span class="history__date">${formatDate(h.at)}</span>
-          <span class="history__title">${h.mode === 'review' ? '復習' : esc(titleOf(h.lessonId))}</span>
+          <span class="history__title">${h.mode === 'review' ? '復習' : esc(titleOf(h))}</span>
           <span class="score">${h.score}/${h.total}</span>
         </li>`).join('')}
       </ul>` : '<p class="muted">まだきろくがありません。最初のレッスンをやってみよう。</p>'}
@@ -634,6 +671,14 @@
     'start-review': () => {
       view.startedAt = Date.now();
       startQuiz('review', shuffle(view.words).slice(0, 10), null);
+    },
+    'pick-course': async el => {
+      const course = courses.find(c => c.id === el.dataset.course);
+      if (!course || course.status !== 'available') return;
+      store.settings.courseId = course.id;
+      saveStore();
+      await loadCourseLessons(course);
+      go({ name: 'home' });
     },
     'toggle-sound': el => { store.settings.sound = el.checked; saveStore(); },
     'reset-ask': () => { view.confirmReset = true; render(); },
@@ -702,8 +747,7 @@
     render();
     try {
       await loadCourses();
-      const course = availableCourse();
-      await Promise.all(course.lessons.map(r => ensureLesson(r.id)));
+      await loadCourseLessons(currentCourse());
       go({ name: 'home' });
     } catch (err) {
       showError(err);

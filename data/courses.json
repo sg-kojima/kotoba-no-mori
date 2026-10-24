@@ -8,15 +8,98 @@
       "description": "身近なものの名前と、毎日のあいさつから。",
       "status": "available",
       "lessons": [
-        { "id": "e5-animals", "file": "lessons/e5-animals.json" },
-        { "id": "e5-food", "file": "lessons/e5-food.json" },
-        { "id": "e5-forest", "file": "lessons/e5-forest.json" },
-        { "id": "e5-greetings", "file": "lessons/e5-greetings.json" }
+        {
+          "id": "e5-animals",
+          "file": "lessons/e5-animals.json"
+        },
+        {
+          "id": "e5-food",
+          "file": "lessons/e5-food.json"
+        },
+        {
+          "id": "e5-forest",
+          "file": "lessons/e5-forest.json"
+        },
+        {
+          "id": "e5-greetings",
+          "file": "lessons/e5-greetings.json"
+        }
       ]
     },
-    { "id": "eiken4", "title": "こみちの森", "levelLabel": "英検4級相当", "description": "準備中", "status": "coming-soon", "lessons": [] },
-    { "id": "eiken3", "title": "いずみの森", "levelLabel": "英検3級相当", "description": "準備中", "status": "coming-soon", "lessons": [] },
-    { "id": "eikenp2", "title": "こだまの森", "levelLabel": "英検準2級相当", "description": "準備中", "status": "coming-soon", "lessons": [] },
-    { "id": "eiken2", "title": "ほしぞらの森", "levelLabel": "英検2級相当", "description": "準備中", "status": "coming-soon", "lessons": [] }
+    {
+      "id": "eiken3",
+      "title": "いずみの森",
+      "levelLabel": "英検3級相当",
+      "description": "旅行・体調・約束など、暮らしで役立つ表現。",
+      "status": "available",
+      "lessons": [
+        {
+          "id": "e3-travel",
+          "file": "lessons/e3-travel.json"
+        },
+        {
+          "id": "e3-health",
+          "file": "lessons/e3-health.json"
+        },
+        {
+          "id": "e3-plans",
+          "file": "lessons/e3-plans.json"
+        },
+        {
+          "id": "e3-feelings",
+          "file": "lessons/e3-feelings.json"
+        }
+      ]
+    },
+    {
+      "id": "eikenp2",
+      "title": "こだまの森",
+      "levelLabel": "英検準2級相当",
+      "description": "仕事の会話や意見の言い方、社会につながることば。",
+      "status": "available",
+      "lessons": [
+        {
+          "id": "p2-work",
+          "file": "lessons/p2-work.json"
+        },
+        {
+          "id": "p2-opinion",
+          "file": "lessons/p2-opinion.json"
+        },
+        {
+          "id": "p2-verbs",
+          "file": "lessons/p2-verbs.json"
+        },
+        {
+          "id": "p2-life",
+          "file": "lessons/p2-life.json"
+        }
+      ]
+    },
+    {
+      "id": "eiken2",
+      "title": "ほしぞらの森",
+      "levelLabel": "英検2級相当",
+      "description": "ビジネスメールや議論の表現、ニュースに出る語彙。",
+      "status": "available",
+      "lessons": [
+        {
+          "id": "e2-business",
+          "file": "lessons/e2-business.json"
+        },
+        {
+          "id": "e2-discussion",
+          "file": "lessons/e2-discussion.json"
+        },
+        {
+          "id": "e2-society",
+          "file": "lessons/e2-society.json"
+        },
+        {
+          "id": "e2-verbs",
+          "file": "lessons/e2-verbs.json"
+        }
+      ]
+    }
   ]
 }

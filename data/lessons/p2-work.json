@@ -1,0 +1,102 @@
+{
+  "id": "p2-work",
+  "title": "職場で",
+  "subtitle": "仕事を進めるひとこと",
+  "kind": "phrase",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "p2-work-01",
+      "en": "I'm in charge of the project.",
+      "ja": "そのプロジェクトの担当です。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I'm in charge of the new project.",
+        "ja": "わたしが新しいプロジェクトの担当です。"
+      },
+      "blank": "in charge of"
+    },
+    {
+      "id": "p2-work-02",
+      "en": "Could you give me a hand?",
+      "ja": "手を貸してもらえますか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "This box is heavy. Could you give me a hand?",
+        "ja": "この箱重いな。手を貸してもらえますか。"
+      },
+      "blank": "give me a hand"
+    },
+    {
+      "id": "p2-work-03",
+      "en": "Let me check my schedule.",
+      "ja": "予定を確認させてください。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Next Tuesday? Let me check my schedule.",
+        "ja": "来週の火曜ですか。予定を確認させてください。"
+      },
+      "blank": "check my schedule"
+    },
+    {
+      "id": "p2-work-04",
+      "en": "I'll get back to you.",
+      "ja": "折り返し連絡します。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I'll get back to you by this afternoon.",
+        "ja": "今日の午後までに折り返し連絡します。"
+      },
+      "blank": "get back to",
+      "note": "すぐに答えられないときの便利な返し方です。"
+    },
+    {
+      "id": "p2-work-05",
+      "en": "The meeting has been postponed.",
+      "ja": "会議が延期になりました。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "The meeting has been postponed until Monday.",
+        "ja": "会議は月曜日に延期になりました。"
+      },
+      "blank": "postponed"
+    },
+    {
+      "id": "p2-work-06",
+      "en": "Sorry to keep you waiting.",
+      "ja": "お待たせしてすみません。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Sorry to keep you waiting. Let's begin.",
+        "ja": "お待たせしてすみません。始めましょう。"
+      },
+      "blank": "keep you waiting"
+    },
+    {
+      "id": "p2-work-07",
+      "en": "Could you send me the file?",
+      "ja": "ファイルを送ってもらえますか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Could you send me the file by email?",
+        "ja": "ファイルをメールで送ってもらえますか。"
+      },
+      "blank": "send me the file"
+    },
+    {
+      "id": "p2-work-08",
+      "en": "I'm working on it.",
+      "ja": "今取りかかっています。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "The report? I'm working on it now.",
+        "ja": "報告書ですか。今取りかかっています。"
+      },
+      "blank": "working on"
+    }
+  ]
+}

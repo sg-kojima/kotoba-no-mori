@@ -1,0 +1,103 @@
+{
+  "id": "e3-plans",
+  "title": "電話と約束",
+  "subtitle": "会う日を決める",
+  "kind": "phrase",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "e3-plans-01",
+      "en": "Can I speak to Ms. Brown?",
+      "ja": "ブラウンさんをお願いできますか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Hello. Can I speak to Ms. Brown, please?",
+        "ja": "もしもし。ブラウンさんをお願いできますか。"
+      },
+      "blank": "speak to",
+      "note": "電話で相手を呼び出すときの言い方です。"
+    },
+    {
+      "id": "e3-plans-02",
+      "en": "Hold on, please.",
+      "ja": "少々お待ちください。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Hold on, please. I'll get her.",
+        "ja": "少々お待ちください。呼んできます。"
+      },
+      "blank": "Hold on"
+    },
+    {
+      "id": "e3-plans-03",
+      "en": "Can I leave a message?",
+      "ja": "伝言をお願いできますか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "She's out? Can I leave a message?",
+        "ja": "外出中ですか。伝言をお願いできますか。"
+      },
+      "blank": "leave a message"
+    },
+    {
+      "id": "e3-plans-04",
+      "en": "Shall we meet at the station?",
+      "ja": "駅で会いましょうか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Shall we meet at the station at ten?",
+        "ja": "10時に駅で会いましょうか。"
+      },
+      "blank": "Shall we"
+    },
+    {
+      "id": "e3-plans-05",
+      "en": "How about next Friday?",
+      "ja": "来週の金曜日はどうですか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I'm busy this week. How about next Friday?",
+        "ja": "今週は忙しいんです。来週の金曜日はどう？"
+      },
+      "blank": "How about"
+    },
+    {
+      "id": "e3-plans-06",
+      "en": "Sounds good.",
+      "ja": "いいね。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Pizza for lunch? Sounds good!",
+        "ja": "お昼はピザ？いいね！"
+      },
+      "blank": "Sounds"
+    },
+    {
+      "id": "e3-plans-07",
+      "en": "I'm afraid I can't.",
+      "ja": "残念ですが行けません。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Thanks for asking, but I'm afraid I can't.",
+        "ja": "誘ってくれてありがとう。でも残念だけど行けないんだ。"
+      },
+      "blank": "afraid",
+      "note": "やわらかく断るときの表現です。"
+    },
+    {
+      "id": "e3-plans-08",
+      "en": "See you then.",
+      "ja": "じゃあそのときに。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "OK, ten o'clock. See you then!",
+        "ja": "じゃあ10時ね。そのときに！"
+      },
+      "blank": "then"
+    }
+  ]
+}

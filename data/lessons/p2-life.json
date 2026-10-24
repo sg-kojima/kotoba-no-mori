@@ -1,0 +1,93 @@
+{
+  "id": "p2-life",
+  "title": "環境とくらし",
+  "subtitle": "社会につながることば",
+  "kind": "word",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "p2-life-01",
+      "en": "environment",
+      "ja": "環境",
+      "pos": "名詞",
+      "example": {
+        "en": "We must protect the environment.",
+        "ja": "わたしたちは環境を守らなければなりません。"
+      }
+    },
+    {
+      "id": "p2-life-02",
+      "en": "recycle",
+      "ja": "リサイクルする",
+      "pos": "動詞",
+      "example": {
+        "en": "We recycle bottles and cans.",
+        "ja": "わたしたちはびんと缶をリサイクルしています。"
+      }
+    },
+    {
+      "id": "p2-life-03",
+      "en": "volunteer",
+      "ja": "ボランティア",
+      "pos": "名詞",
+      "example": {
+        "en": "She works as a volunteer at the hospital.",
+        "ja": "彼女は病院でボランティアとして働いています。"
+      }
+    },
+    {
+      "id": "p2-life-04",
+      "en": "convenient",
+      "ja": "便利な",
+      "pos": "形容詞",
+      "example": {
+        "en": "This app is very convenient.",
+        "ja": "このアプリはとても便利です。"
+      }
+    },
+    {
+      "id": "p2-life-05",
+      "en": "local",
+      "ja": "地元の",
+      "pos": "形容詞",
+      "example": {
+        "en": "I like shopping at local stores.",
+        "ja": "地元のお店で買い物するのが好きです。"
+      }
+    },
+    {
+      "id": "p2-life-06",
+      "en": "healthy",
+      "ja": "健康的な",
+      "pos": "形容詞",
+      "example": {
+        "en": "Try to eat a healthy breakfast.",
+        "ja": "健康的な朝ごはんを食べるようにしよう。"
+      }
+    },
+    {
+      "id": "p2-life-07",
+      "en": "experience",
+      "ja": "経験",
+      "pos": "名詞",
+      "example": {
+        "en": "Studying abroad was a great experience.",
+        "ja": "留学はすばらしい経験でした。"
+      }
+    },
+    {
+      "id": "p2-life-08",
+      "en": "community",
+      "ja": "地域社会",
+      "pos": "名詞",
+      "example": {
+        "en": "The festival brings the community together.",
+        "ja": "お祭りは地域をひとつにします。"
+      }
+    }
+  ]
+}

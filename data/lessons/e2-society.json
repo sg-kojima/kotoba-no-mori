@@ -1,0 +1,95 @@
+{
+  "id": "e2-society",
+  "title": "社会のことば",
+  "subtitle": "ニュースや長文に出る名詞",
+  "kind": "word",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "e2-society-01",
+      "en": "economy",
+      "ja": "経済",
+      "pos": "名詞",
+      "example": {
+        "en": "The economy is growing slowly.",
+        "ja": "経済はゆっくり成長しています。"
+      }
+    },
+    {
+      "id": "e2-society-02",
+      "en": "government",
+      "ja": "政府",
+      "pos": "名詞",
+      "example": {
+        "en": "The government announced a new policy.",
+        "ja": "政府は新しい政策を発表しました。"
+      }
+    },
+    {
+      "id": "e2-society-03",
+      "en": "population",
+      "ja": "人口",
+      "pos": "名詞",
+      "example": {
+        "en": "Japan's population is getting older.",
+        "ja": "日本の人口は高齢化しています。"
+      }
+    },
+    {
+      "id": "e2-society-04",
+      "en": "technology",
+      "ja": "技術",
+      "pos": "名詞",
+      "example": {
+        "en": "Technology has changed the way we work.",
+        "ja": "技術はわたしたちの働き方を変えました。"
+      },
+      "blank": "Technology"
+    },
+    {
+      "id": "e2-society-05",
+      "en": "benefit",
+      "ja": "利点・恩恵",
+      "pos": "名詞",
+      "example": {
+        "en": "Exercise has many benefits.",
+        "ja": "運動には多くの利点があります。"
+      },
+      "blank": "benefits"
+    },
+    {
+      "id": "e2-society-06",
+      "en": "impact",
+      "ja": "影響",
+      "pos": "名詞",
+      "example": {
+        "en": "Social media has a big impact on young people.",
+        "ja": "SNSは若者に大きな影響を与えています。"
+      }
+    },
+    {
+      "id": "e2-society-07",
+      "en": "solution",
+      "ja": "解決策",
+      "pos": "名詞",
+      "example": {
+        "en": "We need to find a solution to the problem.",
+        "ja": "その問題の解決策を見つける必要があります。"
+      }
+    },
+    {
+      "id": "e2-society-08",
+      "en": "resource",
+      "ja": "資源",
+      "pos": "名詞",
+      "example": {
+        "en": "Water is a precious resource.",
+        "ja": "水は貴重な資源です。"
+      }
+    }
+  ]
+}

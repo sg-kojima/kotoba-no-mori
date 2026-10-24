@@ -1,0 +1,97 @@
+{
+  "id": "e2-verbs",
+  "title": "説明に使う動詞",
+  "subtitle": "2級で差がつく動詞",
+  "kind": "word",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "e2-verbs-01",
+      "en": "require",
+      "ja": "必要とする",
+      "pos": "動詞",
+      "example": {
+        "en": "This job requires experience.",
+        "ja": "この仕事には経験が必要です。"
+      },
+      "blank": "requires"
+    },
+    {
+      "id": "e2-verbs-02",
+      "en": "provide",
+      "ja": "提供する",
+      "pos": "動詞",
+      "example": {
+        "en": "The hotel provides free Wi-Fi.",
+        "ja": "そのホテルは無料Wi-Fiを提供しています。"
+      },
+      "blank": "provides"
+    },
+    {
+      "id": "e2-verbs-03",
+      "en": "encourage",
+      "ja": "励ます・促す",
+      "pos": "動詞",
+      "example": {
+        "en": "My teacher encouraged me to try.",
+        "ja": "先生はわたしに挑戦するよう励ましてくれました。"
+      },
+      "blank": "encouraged"
+    },
+    {
+      "id": "e2-verbs-04",
+      "en": "prevent",
+      "ja": "防ぐ",
+      "pos": "動詞",
+      "example": {
+        "en": "Washing your hands helps prevent illness.",
+        "ja": "手洗いは病気を防ぐのに役立ちます。"
+      }
+    },
+    {
+      "id": "e2-verbs-05",
+      "en": "support",
+      "ja": "支持する",
+      "pos": "動詞",
+      "example": {
+        "en": "Many people support the plan.",
+        "ja": "多くの人がその計画を支持しています。"
+      }
+    },
+    {
+      "id": "e2-verbs-06",
+      "en": "consider",
+      "ja": "よく考える",
+      "pos": "動詞",
+      "example": {
+        "en": "Please consider my suggestion.",
+        "ja": "わたしの提案を検討してください。"
+      }
+    },
+    {
+      "id": "e2-verbs-07",
+      "en": "achieve",
+      "ja": "達成する",
+      "pos": "動詞",
+      "example": {
+        "en": "She worked hard to achieve her goal.",
+        "ja": "彼女は目標を達成するために努力しました。"
+      }
+    },
+    {
+      "id": "e2-verbs-08",
+      "en": "suggest",
+      "ja": "提案する",
+      "pos": "動詞",
+      "example": {
+        "en": "I suggest taking a short break.",
+        "ja": "少し休憩することを提案します。"
+      },
+      "note": "suggest のあとは動詞の ing 形がよく続きます。"
+    }
+  ]
+}

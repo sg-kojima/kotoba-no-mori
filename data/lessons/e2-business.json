@@ -1,0 +1,103 @@
+{
+  "id": "e2-business",
+  "title": "ビジネス英語",
+  "subtitle": "メールと会議の定番",
+  "kind": "phrase",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "e2-business-01",
+      "en": "I'd appreciate it if you could reply by Friday.",
+      "ja": "金曜日までにご返信いただけると助かります。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I'd appreciate it if you could reply by Friday.",
+        "ja": "金曜日までにご返信いただけると助かります。"
+      },
+      "blank": "appreciate",
+      "note": "ていねいにお願いするときの言い方です。"
+    },
+    {
+      "id": "e2-business-02",
+      "en": "Please find the attached file.",
+      "ja": "添付ファイルをご確認ください。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Please find the attached file for details.",
+        "ja": "詳細は添付ファイルをご確認ください。"
+      },
+      "blank": "attached"
+    },
+    {
+      "id": "e2-business-03",
+      "en": "Let's go over the details.",
+      "ja": "詳細を確認しましょう。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Before we start, let's go over the details.",
+        "ja": "始める前に、詳細を確認しましょう。"
+      },
+      "blank": "go over"
+    },
+    {
+      "id": "e2-business-04",
+      "en": "We need to meet the deadline.",
+      "ja": "締め切りに間に合わせる必要があります。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "We need to meet the deadline next week.",
+        "ja": "来週の締め切りに間に合わせる必要があります。"
+      },
+      "blank": "meet the deadline"
+    },
+    {
+      "id": "e2-business-05",
+      "en": "Could we reschedule the meeting?",
+      "ja": "会議の日程を変更できますか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Something came up. Could we reschedule the meeting?",
+        "ja": "急用ができました。会議の日程を変更できますか。"
+      },
+      "blank": "reschedule"
+    },
+    {
+      "id": "e2-business-06",
+      "en": "I'm looking forward to hearing from you.",
+      "ja": "ご連絡をお待ちしております。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Thank you. I'm looking forward to hearing from you.",
+        "ja": "ありがとうございます。ご連絡をお待ちしております。"
+      },
+      "blank": "looking forward to",
+      "note": "to のあとは動詞の ing 形になります。"
+    },
+    {
+      "id": "e2-business-07",
+      "en": "Thank you for your patience.",
+      "ja": "お待ちいただきありがとうございます。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Thank you for your patience while we fix the problem.",
+        "ja": "問題の対応中、お待ちいただきありがとうございます。"
+      },
+      "blank": "patience"
+    },
+    {
+      "id": "e2-business-08",
+      "en": "Let me know if you have any questions.",
+      "ja": "ご不明な点があればお知らせください。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Let me know if you have any questions about the plan.",
+        "ja": "計画についてご不明な点があればお知らせください。"
+      },
+      "blank": "Let me know"
+    }
+  ]
+}

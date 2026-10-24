@@ -1,0 +1,102 @@
+{
+  "id": "e3-travel",
+  "title": "空港とホテル",
+  "subtitle": "旅先で困らない",
+  "kind": "phrase",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "e3-travel-01",
+      "en": "I'd like to check in.",
+      "ja": "チェックインをお願いします。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Hello. I'd like to check in, please.",
+        "ja": "こんにちは。チェックインをお願いします。"
+      },
+      "blank": "check in"
+    },
+    {
+      "id": "e3-travel-02",
+      "en": "I have a reservation.",
+      "ja": "予約しています。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I have a reservation under Tanaka.",
+        "ja": "田中で予約しています。"
+      },
+      "blank": "reservation"
+    },
+    {
+      "id": "e3-travel-03",
+      "en": "What time is checkout?",
+      "ja": "チェックアウトは何時ですか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "What time is checkout tomorrow?",
+        "ja": "明日のチェックアウトは何時ですか。"
+      },
+      "blank": "checkout"
+    },
+    {
+      "id": "e3-travel-04",
+      "en": "Is breakfast included?",
+      "ja": "朝食は付いていますか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Is breakfast included in the price?",
+        "ja": "料金に朝食は含まれていますか。"
+      },
+      "blank": "included"
+    },
+    {
+      "id": "e3-travel-05",
+      "en": "Where can I get a taxi?",
+      "ja": "タクシーはどこで乗れますか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Where can I get a taxi to the hotel?",
+        "ja": "ホテルまでのタクシーはどこで乗れますか。"
+      },
+      "blank": "get a taxi"
+    },
+    {
+      "id": "e3-travel-06",
+      "en": "My flight was delayed.",
+      "ja": "飛行機が遅れました。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "My flight was delayed for two hours.",
+        "ja": "飛行機が2時間遅れました。"
+      },
+      "blank": "delayed"
+    },
+    {
+      "id": "e3-travel-07",
+      "en": "I'm here on vacation.",
+      "ja": "休暇で来ました。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I'm here on vacation for a week.",
+        "ja": "1週間の休暇で来ました。"
+      },
+      "blank": "on vacation",
+      "note": "入国審査で旅の目的を聞かれたときにも使えます。"
+    },
+    {
+      "id": "e3-travel-08",
+      "en": "Could you take our picture?",
+      "ja": "写真を撮っていただけますか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Excuse me, could you take our picture?",
+        "ja": "すみません、写真を撮っていただけますか。"
+      },
+      "blank": "take our picture"
+    }
+  ]
+}

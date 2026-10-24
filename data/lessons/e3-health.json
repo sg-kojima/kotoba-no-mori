@@ -1,0 +1,103 @@
+{
+  "id": "e3-health",
+  "title": "体調と病院",
+  "subtitle": "ぐあいを伝える",
+  "kind": "phrase",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "e3-health-01",
+      "en": "I have a headache.",
+      "ja": "頭が痛いです。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I have a headache, so I'll go home early.",
+        "ja": "頭が痛いので、早めに帰ります。"
+      },
+      "blank": "headache",
+      "note": "歯が痛いなら toothache、おなかなら stomachache。"
+    },
+    {
+      "id": "e3-health-02",
+      "en": "I have a fever.",
+      "ja": "熱があります。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I think I have a fever.",
+        "ja": "熱があるみたいです。"
+      },
+      "blank": "fever"
+    },
+    {
+      "id": "e3-health-03",
+      "en": "I feel sick.",
+      "ja": "気分が悪いです。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I feel sick. Can I sit down?",
+        "ja": "気分が悪いです。座ってもいいですか。"
+      },
+      "blank": "feel sick"
+    },
+    {
+      "id": "e3-health-04",
+      "en": "My stomach hurts.",
+      "ja": "おなかが痛いです。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "My stomach hurts after lunch.",
+        "ja": "昼ごはんのあと、おなかが痛いです。"
+      },
+      "blank": "stomach"
+    },
+    {
+      "id": "e3-health-05",
+      "en": "I caught a cold.",
+      "ja": "かぜをひきました。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I caught a cold last weekend.",
+        "ja": "先週末にかぜをひきました。"
+      },
+      "blank": "caught"
+    },
+    {
+      "id": "e3-health-06",
+      "en": "You should see a doctor.",
+      "ja": "医者にみてもらったほうがいいよ。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "You look pale. You should see a doctor.",
+        "ja": "顔色が悪いよ。医者にみてもらったほうがいいよ。"
+      },
+      "blank": "should"
+    },
+    {
+      "id": "e3-health-07",
+      "en": "Take this medicine twice a day.",
+      "ja": "この薬を1日2回飲んでください。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Take this medicine twice a day after meals.",
+        "ja": "この薬を1日2回、食後に飲んでください。"
+      },
+      "blank": "twice",
+      "note": "薬を「飲む」は drink ではなく take を使います。"
+    },
+    {
+      "id": "e3-health-08",
+      "en": "Take care of yourself.",
+      "ja": "お大事に。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Get some rest and take care of yourself.",
+        "ja": "ゆっくり休んで、お大事に。"
+      },
+      "blank": "take care"
+    }
+  ]
+}

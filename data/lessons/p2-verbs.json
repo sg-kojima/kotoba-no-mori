@@ -1,0 +1,95 @@
+{
+  "id": "p2-verbs",
+  "title": "くらしの動詞",
+  "subtitle": "準2級でよく出る動詞",
+  "kind": "word",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "p2-verbs-01",
+      "en": "borrow",
+      "ja": "借りる",
+      "pos": "動詞",
+      "example": {
+        "en": "Can I borrow your umbrella?",
+        "ja": "かさを借りてもいい？"
+      }
+    },
+    {
+      "id": "p2-verbs-02",
+      "en": "lend",
+      "ja": "貸す",
+      "pos": "動詞",
+      "example": {
+        "en": "Could you lend me your pen?",
+        "ja": "ペンを貸してもらえますか。"
+      },
+      "note": "borrow（借りる）と向きが逆なので注意。"
+    },
+    {
+      "id": "p2-verbs-03",
+      "en": "prepare",
+      "ja": "準備する",
+      "pos": "動詞",
+      "example": {
+        "en": "I need to prepare for the exam.",
+        "ja": "試験の準備をしなければいけません。"
+      }
+    },
+    {
+      "id": "p2-verbs-04",
+      "en": "decide",
+      "ja": "決める",
+      "pos": "動詞",
+      "example": {
+        "en": "We decided to go by train.",
+        "ja": "わたしたちは電車で行くことに決めました。"
+      },
+      "blank": "decided"
+    },
+    {
+      "id": "p2-verbs-05",
+      "en": "explain",
+      "ja": "説明する",
+      "pos": "動詞",
+      "example": {
+        "en": "Could you explain it again?",
+        "ja": "もう一度説明してもらえますか。"
+      }
+    },
+    {
+      "id": "p2-verbs-06",
+      "en": "improve",
+      "ja": "上達させる",
+      "pos": "動詞",
+      "example": {
+        "en": "I want to improve my English.",
+        "ja": "英語を上達させたいです。"
+      }
+    },
+    {
+      "id": "p2-verbs-07",
+      "en": "increase",
+      "ja": "増える",
+      "pos": "動詞",
+      "example": {
+        "en": "The number of visitors will increase.",
+        "ja": "訪れる人の数は増えるでしょう。"
+      }
+    },
+    {
+      "id": "p2-verbs-08",
+      "en": "reduce",
+      "ja": "減らす",
+      "pos": "動詞",
+      "example": {
+        "en": "We should reduce plastic waste.",
+        "ja": "プラスチックごみを減らすべきです。"
+      }
+    }
+  ]
+}

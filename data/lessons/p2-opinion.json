@@ -1,0 +1,103 @@
+{
+  "id": "p2-opinion",
+  "title": "意見を言う",
+  "subtitle": "賛成・反対・理由",
+  "kind": "phrase",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "p2-opinion-01",
+      "en": "In my opinion, ...",
+      "ja": "わたしの意見では…",
+      "pos": "フレーズ",
+      "example": {
+        "en": "In my opinion, we should start earlier.",
+        "ja": "わたしの意見では、もっと早く始めるべきです。"
+      },
+      "blank": "In my opinion",
+      "note": "英検の面接やライティングでもよく使います。"
+    },
+    {
+      "id": "p2-opinion-02",
+      "en": "I agree with you.",
+      "ja": "あなたに賛成です。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I agree with you about the plan.",
+        "ja": "その計画について、あなたに賛成です。"
+      },
+      "blank": "agree with"
+    },
+    {
+      "id": "p2-opinion-03",
+      "en": "I see your point, but ...",
+      "ja": "おっしゃることはわかりますが…",
+      "pos": "フレーズ",
+      "example": {
+        "en": "I see your point, but it's too expensive.",
+        "ja": "おっしゃることはわかりますが、高すぎます。"
+      },
+      "blank": "see your point",
+      "note": "相手を否定せずに反対意見を言うときに使います。"
+    },
+    {
+      "id": "p2-opinion-04",
+      "en": "It depends on the situation.",
+      "ja": "状況によります。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "It depends on the situation, I think.",
+        "ja": "状況によると思います。"
+      },
+      "blank": "depends on"
+    },
+    {
+      "id": "p2-opinion-05",
+      "en": "For example, ...",
+      "ja": "たとえば…",
+      "pos": "フレーズ",
+      "example": {
+        "en": "For example, many people work from home now.",
+        "ja": "たとえば、今は多くの人が在宅で働いています。"
+      },
+      "blank": "For example"
+    },
+    {
+      "id": "p2-opinion-06",
+      "en": "On the other hand, ...",
+      "ja": "一方で…",
+      "pos": "フレーズ",
+      "example": {
+        "en": "It's fast. On the other hand, it costs a lot.",
+        "ja": "速いです。一方で、費用がかかります。"
+      },
+      "blank": "On the other hand"
+    },
+    {
+      "id": "p2-opinion-07",
+      "en": "The main reason is ...",
+      "ja": "主な理由は…です。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "The main reason is the price.",
+        "ja": "主な理由は値段です。"
+      },
+      "blank": "main reason"
+    },
+    {
+      "id": "p2-opinion-08",
+      "en": "I'm not sure about that.",
+      "ja": "それはどうでしょうか。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Everyone will like it? I'm not sure about that.",
+        "ja": "みんな気に入る？それはどうでしょう。"
+      },
+      "blank": "not sure"
+    }
+  ]
+}

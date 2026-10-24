@@ -1,0 +1,93 @@
+{
+  "id": "e3-feelings",
+  "title": "気持ちを伝える",
+  "subtitle": "うれしい・心配・ほこらしい",
+  "kind": "word",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "e3-feelings-01",
+      "en": "excited",
+      "ja": "わくわくした",
+      "pos": "形容詞",
+      "example": {
+        "en": "I'm excited about the trip.",
+        "ja": "旅行が楽しみでわくわくしています。"
+      }
+    },
+    {
+      "id": "e3-feelings-02",
+      "en": "nervous",
+      "ja": "緊張した",
+      "pos": "形容詞",
+      "example": {
+        "en": "I was nervous before the speech.",
+        "ja": "スピーチの前は緊張しました。"
+      }
+    },
+    {
+      "id": "e3-feelings-03",
+      "en": "surprised",
+      "ja": "驚いた",
+      "pos": "形容詞",
+      "example": {
+        "en": "I was surprised at the news.",
+        "ja": "その知らせに驚きました。"
+      }
+    },
+    {
+      "id": "e3-feelings-04",
+      "en": "worried",
+      "ja": "心配な",
+      "pos": "形容詞",
+      "example": {
+        "en": "My mother is worried about me.",
+        "ja": "母はわたしのことを心配しています。"
+      }
+    },
+    {
+      "id": "e3-feelings-05",
+      "en": "tired",
+      "ja": "疲れた",
+      "pos": "形容詞",
+      "example": {
+        "en": "I'm tired after work.",
+        "ja": "仕事のあとで疲れています。"
+      }
+    },
+    {
+      "id": "e3-feelings-06",
+      "en": "glad",
+      "ja": "うれしい",
+      "pos": "形容詞",
+      "example": {
+        "en": "I'm glad to see you.",
+        "ja": "会えてうれしいです。"
+      }
+    },
+    {
+      "id": "e3-feelings-07",
+      "en": "disappointed",
+      "ja": "がっかりした",
+      "pos": "形容詞",
+      "example": {
+        "en": "He was disappointed with the result.",
+        "ja": "彼は結果にがっかりしました。"
+      }
+    },
+    {
+      "id": "e3-feelings-08",
+      "en": "proud",
+      "ja": "ほこらしい",
+      "pos": "形容詞",
+      "example": {
+        "en": "I'm proud of you.",
+        "ja": "あなたのことをほこりに思います。"
+      }
+    }
+  ]
+}

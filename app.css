@@ -212,9 +212,19 @@ body.is-focused .app { padding-bottom: calc(28px + env(safe-area-inset-bottom, 0
 .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--line); }
 .dots i.on { background: var(--mofu-leaf-deep); }
 
-.soon-list { margin-top: 12px; display: flex; flex-direction: column; border-radius: var(--r-md); border: 2px dashed var(--line); padding: 4px 16px; }
-.soon-list li { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 8px 0; font-size: 14px; }
-.soon-list li + li { border-top: 1px solid var(--line); }
+.course-tabs { display: grid; grid-template-columns: repeat(auto-fit, minmax(72px, 1fr)); gap: 8px; }
+.course-tab {
+  appearance: none; cursor: pointer; border: 2px solid var(--line); background: var(--card);
+  border-radius: var(--r-md); padding: 8px 4px; display: flex; flex-direction: column; align-items: center; line-height: 1.3;
+  transition: border-color .15s, background-color .15s;
+}
+.course-tab strong { font-size: 16px; font-weight: 900; }
+.course-tab small { font-size: 11px; color: var(--muted); font-weight: 700; }
+.course-tab:hover:not(:disabled) { border-color: var(--sky); }
+.course-tab[aria-pressed="true"] { border-color: var(--sky-deep); background: var(--bg-deep); }
+.course-tab[aria-pressed="true"] strong { color: var(--sky-deep); }
+.course-tab:disabled { opacity: .5; cursor: default; border-style: dashed; }
+.course__desc { font-size: 14px; margin: -4px 0 12px; }
 
 /* ---------- 学習・クイズ ---------- */
 .focusbar { display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 10px; min-height: 48px; }
@@ -239,12 +249,18 @@ body.is-focused .app { padding-bottom: calc(28px + env(safe-area-inset-bottom, 0
 .example .speak svg { width: 20px; height: 20px; }
 
 .tip { display: grid; grid-template-columns: 56px 1fr; align-items: center; gap: 10px; font-size: 14px; color: var(--muted); }
+.tip--note p { background: var(--lav); color: var(--ink); padding: 10px 14px; border-radius: var(--r-md); }
+.tip--note strong { display: block; font-size: 12px; letter-spacing: .1em; color: var(--lav-deep); }
 
 .nav-row { display: grid; grid-template-columns: 1fr 2fr; gap: 10px; }
 
 .question { padding: 22px 20px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
 .question__ask { font-size: 14px; font-weight: 700; color: var(--muted); }
 .question__prompt { font-size: 30px; font-weight: 900; line-height: 1.3; overflow-wrap: anywhere; }
+.question__cloze { font-family: var(--font-en); font-size: 22px; font-weight: 500; line-height: 1.6; overflow-wrap: anywhere; }
+.blank { display: inline-block; min-width: 4.5em; border-bottom: 3px solid var(--sky-deep); margin: 0 .15em; vertical-align: baseline; line-height: 1.2; }
+.blank.is-filled { min-width: 0; padding: 0 .2em; color: var(--ok); font-weight: 600; }
+.question__hint { font-size: 14px; color: var(--muted); }
 .question__prompt.is-en { font-family: var(--font-en); font-weight: 600; font-size: clamp(38px, 12vw, 54px); }
 
 .choices { display: grid; gap: 10px; }

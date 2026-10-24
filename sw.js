@@ -2,7 +2,7 @@
 // アプリ本体と courses.json に載っている教材をすべて端末に保存する。
 // 教材JSONを追加したら courses.json に載せるだけでよい（ここを書き換える必要はない）。
 // アプリ本体（html/css/js）を更新したら VERSION を上げる。
-const VERSION = 'v1.0.0';
+const VERSION = 'v1.1.0';
 const CACHE = 'kotobanomori-' + VERSION;
 const FONT_CACHE = 'kotobanomori-fonts';
 

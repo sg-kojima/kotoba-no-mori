@@ -1,0 +1,101 @@
+{
+  "id": "e2-discussion",
+  "title": "議論と説明",
+  "subtitle": "考えを筋道立てて話す",
+  "kind": "phrase",
+  "quiz": [
+    "en2ja",
+    "ja2en",
+    "cloze"
+  ],
+  "words": [
+    {
+      "id": "e2-discussion-01",
+      "en": "There are pros and cons.",
+      "ja": "良い点も悪い点もあります。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Working from home? There are pros and cons.",
+        "ja": "在宅勤務？良い点も悪い点もあります。"
+      },
+      "blank": "pros and cons"
+    },
+    {
+      "id": "e2-discussion-02",
+      "en": "It's worth trying.",
+      "ja": "試してみる価値があります。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "It's not easy, but it's worth trying.",
+        "ja": "簡単ではないけれど、試してみる価値があります。"
+      },
+      "blank": "worth"
+    },
+    {
+      "id": "e2-discussion-03",
+      "en": "As a result, ...",
+      "ja": "その結果…",
+      "pos": "フレーズ",
+      "example": {
+        "en": "We changed the design. As a result, sales went up.",
+        "ja": "デザインを変えました。その結果、売上が伸びました。"
+      },
+      "blank": "As a result"
+    },
+    {
+      "id": "e2-discussion-04",
+      "en": "That's not always true.",
+      "ja": "必ずしもそうとは限りません。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Expensive means better? That's not always true.",
+        "ja": "高いほど良い？必ずしもそうとは限りません。"
+      },
+      "blank": "not always"
+    },
+    {
+      "id": "e2-discussion-05",
+      "en": "It's hard to say.",
+      "ja": "なんとも言えません。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Will it rain tomorrow? It's hard to say.",
+        "ja": "明日は雨？なんとも言えないね。"
+      },
+      "blank": "hard to say"
+    },
+    {
+      "id": "e2-discussion-06",
+      "en": "What I mean is, ...",
+      "ja": "つまり、言いたいのは…",
+      "pos": "フレーズ",
+      "example": {
+        "en": "What I mean is, we need more time.",
+        "ja": "つまり、もっと時間が必要だということです。"
+      },
+      "blank": "What I mean"
+    },
+    {
+      "id": "e2-discussion-07",
+      "en": "Let me put it another way.",
+      "ja": "別の言い方をさせてください。",
+      "pos": "フレーズ",
+      "example": {
+        "en": "That sounds confusing. Let me put it another way.",
+        "ja": "わかりにくいですね。別の言い方をさせてください。"
+      },
+      "blank": "put it another way"
+    },
+    {
+      "id": "e2-discussion-08",
+      "en": "Overall, ...",
+      "ja": "全体として…",
+      "pos": "フレーズ",
+      "example": {
+        "en": "Overall, I think it's a good plan.",
+        "ja": "全体として、良い計画だと思います。"
+      },
+      "blank": "Overall"
+    }
+  ]
+}
