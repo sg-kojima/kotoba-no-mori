@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "courses": [
+    {
+      "id": "eiken5",
+      "title": "はじめの森",
+      "levelLabel": "英検5級相当",
+      "description": "身近なものの名前と、毎日のあいさつから。",
+      "status": "available",
+      "lessons": [
+        { "id": "e5-animals", "file": "lessons/e5-animals.json" },
+        { "id": "e5-food", "file": "lessons/e5-food.json" },
+        { "id": "e5-forest", "file": "lessons/e5-forest.json" },
+        { "id": "e5-greetings", "file": "lessons/e5-greetings.json" }
+      ]
+    },
+    { "id": "eiken4", "title": "こみちの森", "levelLabel": "英検4級相当", "description": "準備中", "status": "coming-soon", "lessons": [] },
+    { "id": "eiken3", "title": "いずみの森", "levelLabel": "英検3級相当", "description": "準備中", "status": "coming-soon", "lessons": [] },
+    { "id": "eikenp2", "title": "こだまの森", "levelLabel": "英検準2級相当", "description": "準備中", "status": "coming-soon", "lessons": [] },
+    { "id": "eiken2", "title": "ほしぞらの森", "levelLabel": "英検2級相当", "description": "準備中", "status": "coming-soon", "lessons": [] }
+  ]
+}

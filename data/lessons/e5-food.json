@@ -1,0 +1,14 @@
+{
+  "id": "e5-food",
+  "title": "たべもの",
+  "subtitle": "朝ごはんとおやつ",
+  "kind": "word",
+  "words": [
+    { "id": "e5-food-apple", "en": "apple", "ja": "りんご", "pos": "名詞", "example": { "en": "This apple is red.", "ja": "このりんごは赤いです。" } },
+    { "id": "e5-food-bread", "en": "bread", "ja": "パン", "pos": "名詞", "example": { "en": "I eat bread for breakfast.", "ja": "わたしは朝ごはんにパンを食べます。" } },
+    { "id": "e5-food-milk", "en": "milk", "ja": "牛乳", "pos": "名詞", "example": { "en": "Do you want some milk?", "ja": "牛乳はいかがですか。" } },
+    { "id": "e5-food-egg", "en": "egg", "ja": "たまご", "pos": "名詞", "example": { "en": "She cooks an egg.", "ja": "彼女はたまごを料理します。" } },
+    { "id": "e5-food-water", "en": "water", "ja": "水", "pos": "名詞", "example": { "en": "Can I have some water?", "ja": "お水をもらえますか。" } },
+    { "id": "e5-food-cake", "en": "cake", "ja": "ケーキ", "pos": "名詞", "example": { "en": "We made a cake.", "ja": "わたしたちはケーキを作りました。" } }
+  ]
+}

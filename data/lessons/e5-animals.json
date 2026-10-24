@@ -1,0 +1,14 @@
+{
+  "id": "e5-animals",
+  "title": "どうぶつ",
+  "subtitle": "森で会える生きもの",
+  "kind": "word",
+  "words": [
+    { "id": "e5-animals-cat", "en": "cat", "ja": "ねこ", "pos": "名詞", "example": { "en": "I have a cat.", "ja": "わたしはねこを飼っています。" } },
+    { "id": "e5-animals-dog", "en": "dog", "ja": "いぬ", "pos": "名詞", "example": { "en": "The dog is big.", "ja": "その犬は大きいです。" } },
+    { "id": "e5-animals-bird", "en": "bird", "ja": "とり", "pos": "名詞", "example": { "en": "A bird is singing.", "ja": "鳥が歌っています。" } },
+    { "id": "e5-animals-rabbit", "en": "rabbit", "ja": "うさぎ", "pos": "名詞", "example": { "en": "The rabbit has long ears.", "ja": "うさぎは長い耳をしています。" } },
+    { "id": "e5-animals-bear", "en": "bear", "ja": "くま", "pos": "名詞", "example": { "en": "A bear lives in the forest.", "ja": "くまは森に住んでいます。" } },
+    { "id": "e5-animals-fish", "en": "fish", "ja": "さかな", "pos": "名詞", "example": { "en": "I like fish.", "ja": "わたしは魚が好きです。" } }
+  ]
+}

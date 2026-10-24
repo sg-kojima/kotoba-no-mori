@@ -1,0 +1,14 @@
+{
+  "id": "e5-forest",
+  "title": "森のもの",
+  "subtitle": "モフルンのすみか",
+  "kind": "word",
+  "words": [
+    { "id": "e5-forest-tree", "en": "tree", "ja": "木", "pos": "名詞", "example": { "en": "That tree is very tall.", "ja": "あの木はとても高いです。" } },
+    { "id": "e5-forest-flower", "en": "flower", "ja": "花", "pos": "名詞", "example": { "en": "This flower is pink.", "ja": "この花はピンク色です。" } },
+    { "id": "e5-forest-leaf", "en": "leaf", "ja": "葉っぱ", "pos": "名詞", "example": { "en": "A leaf is on my head.", "ja": "頭に葉っぱがのっています。" } },
+    { "id": "e5-forest-river", "en": "river", "ja": "川", "pos": "名詞", "example": { "en": "Fish swim in the river.", "ja": "魚が川で泳いでいます。" } },
+    { "id": "e5-forest-sky", "en": "sky", "ja": "空", "pos": "名詞", "example": { "en": "The sky is blue today.", "ja": "今日は空が青いです。" } },
+    { "id": "e5-forest-star", "en": "star", "ja": "星", "pos": "名詞", "example": { "en": "I can see a star.", "ja": "星がひとつ見えます。" } }
+  ]
+}

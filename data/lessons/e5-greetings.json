@@ -1,0 +1,14 @@
+{
+  "id": "e5-greetings",
+  "title": "あいさつ",
+  "subtitle": "毎日つかうひとこと",
+  "kind": "phrase",
+  "words": [
+    { "id": "e5-greet-morning", "en": "Good morning.", "ja": "おはよう。", "pos": "フレーズ", "example": { "en": "Good morning, Mom!", "ja": "お母さん、おはよう！" } },
+    { "id": "e5-greet-thanks", "en": "Thank you.", "ja": "ありがとう。", "pos": "フレーズ", "example": { "en": "Thank you for the cake.", "ja": "ケーキをありがとう。" } },
+    { "id": "e5-greet-nice", "en": "Nice to meet you.", "ja": "はじめまして。", "pos": "フレーズ", "example": { "en": "Hi, I'm Ken. Nice to meet you.", "ja": "こんにちは、ケンです。はじめまして。" } },
+    { "id": "e5-greet-howareyou", "en": "How are you?", "ja": "元気ですか。", "pos": "フレーズ", "example": { "en": "Hello, Amy. How are you?", "ja": "こんにちは、エイミー。元気？" } },
+    { "id": "e5-greet-excuse", "en": "Excuse me.", "ja": "すみません。", "pos": "フレーズ", "example": { "en": "Excuse me. Where is the station?", "ja": "すみません。駅はどこですか。" } },
+    { "id": "e5-greet-seeyou", "en": "See you.", "ja": "またね。", "pos": "フレーズ", "example": { "en": "See you tomorrow!", "ja": "また明日ね！" } }
+  ]
+}
